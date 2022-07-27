@@ -1,0 +1,1 @@
+SELECT Countries.name, SUM(Goals.goals) As total from Goals INNER JOIN Countries ON Countries.id = Goals.country_id GROUP BY Countries.name, Countries.id ORDER BY total DESC, Countries.id ASC
